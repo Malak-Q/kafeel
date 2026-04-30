@@ -1573,11 +1573,11 @@
     
         
     <!-- Auth Section --><!-- Auth Section - Strictly No-Scroll Version -->
-<!-- Auth Section - Balanced Layout -->
+<!-- Auth Section - Final Balanced & Forced Autoplay -->
 <section id="auth-view" class="section" style="height: 100svh; overflow: hidden; background-color: #f8f5e9;">
     <div class="container px-4" style="display: flex; flex-direction: column; align-items: center; height: 100%; padding-top: 15px;">
         
-        <!-- 1. Header: Semi-bold and clear -->
+        <!-- 1. Header -->
         <div class="text-center" style="margin-bottom: 10px; width: 100%;">
             <h1 style="color: #6d6a3f !important; font-family: 'Futura', sans-serif !important; font-size: 2.7rem !important; font-weight: 600 !important; white-space: nowrap; margin: 0; letter-spacing: -0.5px;">KAFEEL</h1>
             <p style="color: #1F3B3E !important; line-height: 1.2; font-size: 0.95rem; white-space: nowrap; margin: 0 auto;">
@@ -1586,22 +1586,23 @@
             </p>
         </div>
         
-        <!-- 2. Video: Centered with breathing room -->
-        <div style="width: 100%; max-height: 42vh; display: flex; justify-content: center; align-items: center; margin: 15px 0; overflow: hidden;">
-            <video muted autoplay loop playsinline webkit-playsinline
-                style="height: 100%; width: auto; max-width: 78%; object-fit: contain;">
+        <!-- 2. Video: Forced Autoplay Attributes -->
+        <div style="width: 100%; max-height: 42vh; display: flex; justify-content: center; align-items: center; margin: 10px 0; overflow: hidden;">
+            <video muted autoplay loop playsinline webkit-playsinline preload="auto"
+                style="height: 100%; width: auto; max-width: 78%; object-fit: contain; pointer-events: none;">
                 <source src="Video-home.mp4" type="video/mp4">
             </video>
         </div>
         
-        <!-- 3. e-Key: Spaced correctly from the video -->
-        <div class="text-center" style="margin-top: 10px; z-index: 10;">
+        <!-- 3. e-Key: Tightened Grouping -->
+        <div class="text-center" style="margin-top: 5px; z-index: 10;">
             <a href="#" onclick="document.querySelectorAll('.section').forEach(s => s.classList.add('hidden')); document.getElementById('home-view').classList.remove('hidden'); document.querySelector('.floating-nav').classList.add('show'); return false;" 
                class="ekey-circle-button animate-ekey-heartbeat" 
-               style="transform: scale(0.7) !important; display: inline-block; margin-bottom: 5px;">
+               style="transform: scale(0.7) !important; display: inline-block; margin-bottom: 0;">
                 <img src="eKey-logo.png" alt="e-Key" class="ekey-circle-logo">
             </a>
-            <p style="font-size: 0.75rem; color: #1F3B3E; margin-top: 2px; font-weight: 500; opacity: 0.8;">Login with e-Key</p>
+            <!-- Margin-top is now negative to pull text closer to the button -->
+            <p style="font-size: 0.75rem; color: #1F3B3E; margin-top: -8px; font-weight: 500; opacity: 0.8;">Login with e-Key</p>
         </div>
         
     </div>
