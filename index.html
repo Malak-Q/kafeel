@@ -1587,12 +1587,21 @@
         </div>
         
         <!-- 2. Video: Forced Autoplay Attributes -->
-        <div style="width: 100%; max-height: 42vh; display: flex; justify-content: center; align-items: center; margin: 10px 0; overflow: hidden;">
-            <video muted autoplay loop playsinline webkit-playsinline preload="auto"
-                style="height: 100%; width: auto; max-width: 78%; object-fit: contain; pointer-events: none;">
-                <source src="Video-home.mp4" type="video/mp4">
-            </video>
-        </div>
+        <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    
+    // Attempt to play on load
+    video.play().catch(function(error) {
+      console.log("Autoplay blocked by browser/battery settings.");
+      
+      // Fallback: Play on first user interaction anywhere on the screen
+      document.body.addEventListener('click', function() {
+        video.play();
+      }, { once: true });
+    });
+  });
+</script>
         
         <!-- 3. e-Key: Tightened Grouping -->
         <div class="text-center" style="margin-top: 5px; z-index: 10;">
