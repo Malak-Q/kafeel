@@ -1591,8 +1591,10 @@
                 <div style="position: absolute; width: 220px; height: 220px; background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, rgba(139, 92, 246, 0.08) 40%, transparent 70%); border-radius: 50%; z-index: 0;"></div>
                 
                 <!-- Raw Background Video - Adjusted scale to prevent overflow -->
-                <video src="Video-home.mp4" autoplay muted loop playsinline
+                <video autoplay muted loop playsinline
                     style="width: 90% !important; height: auto !important; display: block !important; margin: 0 auto !important; pointer-events: none !important; z-index: 1; transform: scale(1.1) !important;">
+                    <source src="Video-home.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             
@@ -1601,7 +1603,7 @@
                 <a href="#" onclick="document.querySelectorAll('.section').forEach(s => s.classList.add('hidden')); document.getElementById('home-view').classList.remove('hidden'); document.querySelector('.floating-nav').classList.add('show'); return false;" 
                 class="ekey-circle-button animate-ekey-heartbeat" 
                 style="display: inline-block;">
-                    <img src="eKey-logo.png" alt="e-Key" class="ekey-circle-logo">
+                    <img src="./eKey-logo.png" alt="e-Key" class="ekey-circle-logo">
                 </a>
             </div>
             
@@ -1616,7 +1618,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-4">
                         <div style="display: flex; align-items: center; justify-content: center;">
-                            <img src="character-pfp.jpg" style="width: 48px !important; height: 48px !important; display: block !important; object-fit: contain !important;" alt="Character Profile">
+                            <img src="./character-pfp.jpg" style="width: 48px !important; height: 48px !important; display: block !important; object-fit: contain !important;" alt="Character Profile">
                         </div>
                         <div onclick="document.querySelectorAll('.section').forEach(s => s.classList.add('hidden')); document.getElementById('settings-view').classList.remove('hidden'); document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));" style="cursor: pointer;">
                             <h2 class="text-xl font-bold" style="color: #1F3B3E;">Welcome back, Rashed</h2>
@@ -1771,9 +1773,9 @@
         <div class="container px-6" style="width: 100% !important; max-width: 100% !important; padding-left: 10px !important; padding-right: 10px !important;">
             <div class="text-center">
                 <div class="sparkle-container">
-                    <img src="feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
+                    <img src="./feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
                     <h2 class="premium-header">Schedule</h2>
-                    <img src="feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
+                    <img src="./feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
                 </div>
             </div>
             
@@ -1995,7 +1997,7 @@
                     <i data-lucide="help-circle" class="w-5 h-5" style="color: #E9D4B9;"></i>
                 </div>
                 <div class="flex items-center space-x-4 mb-4">
-                    <img src="NBB-logo.jpg" alt="NBB" class="bank-logo">
+                    <img src="./NBB-logo.jpg" alt="NBB" class="bank-logo">
                     <div>
                         <h3 class="font-semibold" style="color: #E9D4B9;">National Bank of Bahrain</h3>
                         <p class="text-sm" style="color: #E9D4B9; opacity: 0.8;">Premium Personal Loan</p>
@@ -2011,7 +2013,7 @@
                     <i data-lucide="help-circle" class="w-5 h-5" style="color: #E9D4B9;"></i>
                 </div>
                 <div class="flex items-center space-x-4 mb-4">
-                    <img src="BisB-logo.png" alt="BisB" class="bank-logo">
+                    <img src="./BisB-logo.png" alt="BisB" class="bank-logo">
                     <div>
                         <h3 class="font-semibold" style="color: #E9D4B9;">Bahrain Islamic Bank</h3>
                         <p class="text-sm" style="color: #E9D4B9; opacity: 0.8;">Islamic Financing</p>
@@ -2027,7 +2029,7 @@
                     <i data-lucide="help-circle" class="w-5 h-5" style="color: #1F3B3E;"></i>
                 </div>
                 <div class="flex items-center space-x-4 mb-4">
-                    <img src="BBK-logo.png" alt="BBK" class="bank-logo">
+                    <img src="./BBK-logo.png" alt="BBK" class="bank-logo">
                     <div>
                         <h3 class="font-semibold" style="color: #1F3B3E;">Bank of Bahrain and Kuwait</h3>
                         <p class="text-sm" style="color: #1F3B3E; opacity: 0.8;">Business Loan</p>
@@ -2043,7 +2045,7 @@
                     <i data-lucide="help-circle" class="w-5 h-5" style="color: #1F3B3E;"></i>
                 </div>
                 <div class="flex items-center space-x-4 mb-4">
-                    <img src="GIB-logo.png" alt="alsalam" class="bank-logo">
+                    <img src="./GIB-logo.png" alt="alsalam" class="bank-logo">
                     <div>
                         <h3 class="font-semibold" style="color: #1F3B3E;">Al Salam Bank</h3>
                         <p class="text-sm" style="color: #1F3B3E; opacity: 0.8;">Premium Mortgage</p>
@@ -2074,9 +2076,9 @@
         <div class="container px-6">
             <div class="text-center">
                 <div class="sparkle-container">
-                    <img src="feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
+                    <img src="./feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
                     <h2 class="premium-header">The Syndicate</h2>
-                    <img src="feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
+                    <img src="./feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
                 </div>
             </div>
             
@@ -2217,9 +2219,9 @@
         <div class="container px-6">
             <div class="text-center">
                 <div class="sparkle-container">
-                    <img src="feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
+                    <img src="./feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
                     <h2 class="premium-header">Bill Directory & Subscriptions</h2>
-                    <img src="feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
+                    <img src="./feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
                 </div>
             </div>
             
@@ -2315,9 +2317,9 @@
         <div class="container px-6">
             <div class="text-center">
                 <div class="sparkle-container">
-                    <img src="feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
+                    <img src="./feather.png" style="width: 14px; height: 14px; transform: rotate(15deg); position: absolute; left: -20px; top: -5px; opacity: 0.7;">
                     <h2 class="premium-header">Profile</h2>
-                    <img src="feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
+                    <img src="./feather.png" style="width: 16px; height: 16px; transform: rotate(45deg); position: absolute; right: -25px; bottom: -8px; opacity: 0.6;">
                 </div>
             </div>
             
@@ -2325,7 +2327,7 @@
             <div class="card mb-4" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%) !important; border: 1px solid rgba(49, 73, 75, 0.1) !important;">
                 <div class="flex items-center space-x-4">
                     <div class="w-16 h-16 rounded-full sapphire flex items-center justify-center">
-                        <img src="character-pfp.jpg" style="width: 48px !important; height: 48px !important; border-radius: 50% !important; object-fit: cover !important; display: block !important;" alt="Character Profile">
+                        <img src="./character-pfp.jpg" style="width: 48px !important; height: 48px !important; border-radius: 50% !important; object-fit: cover !important; display: block !important;" alt="Character Profile">
                     </div>
                     <div>
                         <h3 class="font-semibold">Rashed Aldoseri</h3>
@@ -3182,7 +3184,7 @@ function showRiskReport() {
 </div>
 
 <div id="bp-toggle-chat" style="position: fixed; top: 20px; left: 20px; width: 65px; height: 65px; border-radius: 50%; z-index: 99999; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: grab; box-shadow: 0 4px 12px rgba(0,0,0,0.25); border: 2.5px solid #FFFFFF;">
-    <img src="KAFEEL-logo1.png" style="width: 100%; height: 100%; border-radius: 50%; pointer-events: none;" alt="Kafeel Falcon Logo">
+    <img src="./KAFEEL-logo1.png" style="width: 100%; height: 100%; border-radius: 50%; pointer-events: none;" alt="Kafeel Falcon Logo">
 </div>
 <script>
 // 1. Link Kafeel Logo to Botpress
@@ -3282,133 +3284,133 @@ window.botpressWebChat.onEvent(function (event) {
     // 1. GLOBAL DATA - Accessible by the search bar and functions
 const allServices = [
     // Telecom
-    { name: 'Batelco', sub: 'Fiber & Postpaid', categoryId: 'telecom', logo: 'logo-batelco.png' },
-    { name: 'stc Bahrain', sub: 'Mobile & Broadband', categoryId: 'telecom', logo: 'logo-stc.jpg' },
-    { name: 'Zain', sub: '5G Home Internet', categoryId: 'telecom', logo: 'logo-zain.png' },
+    { name: 'Batelco', sub: 'Fiber & Postpaid', categoryId: 'telecom', logo: './logo-batelco.png' },
+    { name: 'stc Bahrain', sub: 'Mobile & Broadband', categoryId: 'telecom', logo: './logo-stc.jpg' },
+    { name: 'Zain', sub: '5G Home Internet', categoryId: 'telecom', logo: './logo-zain.png' },
 
     // Insurance & Finance
-    { name: 'Arabia Insurance', sub: 'General Insurance', categoryId: 'insurance', logo: 'logo-insurance-arabia.png' },
-    { name: 'Bahrain National Insurance (BNI)', sub: 'Motor & Home', categoryId: 'insurance', logo: 'logo-insurance-bahrain-national.jpg' },
-    { name: 'CrediMax', sub: 'Payments & Credit', categoryId: 'insurance', logo: 'logo-insurance-credimax.jpg' },
-    { name: 'Gulf Union Insurance', sub: 'Health & General', categoryId: 'insurance', logo: 'logo-insurance-gulf-union.jpg' },
-    { name: 'SNIC Insurance', sub: 'Corporate & Personal', categoryId: 'insurance', logo: 'logo-insurance-snic.jpg' },
-    { name: 'Solidarity Insurance', sub: 'Takaful Insurance', categoryId: 'insurance', logo: 'logo-solidarity-logo.png' },
-    { name: 'stc pay', sub: 'Digital Wallet', categoryId: 'insurance', logo: 'logo-insurance-stc-pay.png' },
+    { name: 'Arabia Insurance', sub: 'General Insurance', categoryId: 'insurance', logo: './logo-insurance-arabia.png' },
+    { name: 'Bahrain National Insurance (BNI)', sub: 'Motor & Home', categoryId: 'insurance', logo: './logo-insurance-bahrain-national.jpg' },
+    { name: 'CrediMax', sub: 'Payments & Credit', categoryId: 'insurance', logo: './logo-insurance-credimax.jpg' },
+    { name: 'Gulf Union Insurance', sub: 'Health & General', categoryId: 'insurance', logo: './logo-insurance-gulf-union.jpg' },
+    { name: 'SNIC Insurance', sub: 'Corporate & Personal', categoryId: 'insurance', logo: './logo-insurance-snic.jpg' },
+    { name: 'Solidarity Insurance', sub: 'Takaful Insurance', categoryId: 'insurance', logo: './logo-solidarity-logo.png' },
+    { name: 'stc pay', sub: 'Digital Wallet', categoryId: 'insurance', logo: './logo-insurance-stc-pay.png' },
 
     // Real Estate
-    { name: 'Durrat Al Bahrain', sub: 'Luxury Resort', categoryId: 'realestate', logo: 'logo-property-durrat-al-bahrain.jpg' },
-    { name: 'Grnata Group', sub: 'Property Management', categoryId: 'realestate', logo: 'logo-property-grnata.jpg' },
-    { name: 'Marassi Residences', sub: 'Beachfront Living', categoryId: 'realestate', logo: 'logo-property-marassi-residence.png' },
-    { name: 'Marriott Exclusive Apartments', sub: 'Premium Living', categoryId: 'realestate', logo: 'logo-property-marriott-apartments.jpg' },
-    { name: 'Reef Island', sub: 'Private Island Residency', categoryId: 'realestate', logo: 'logo-property-reef-island.jpg' },
+    { name: 'Durrat Al Bahrain', sub: 'Luxury Resort', categoryId: 'realestate', logo: './logo-property-durrat-al-bahrain.jpg' },
+    { name: 'Grnata Group', sub: 'Property Management', categoryId: 'realestate', logo: './logo-property-grnata.jpg' },
+    { name: 'Marassi Residences', sub: 'Beachfront Living', categoryId: 'realestate', logo: './logo-property-marassi-residence.png' },
+    { name: 'Marriott Exclusive Apartments', sub: 'Premium Living', categoryId: 'realestate', logo: './logo-property-marriott-apartments.jpg' },
+    { name: 'Reef Island', sub: 'Private Island Residency', categoryId: 'realestate', logo: './logo-property-reef-island.jpg' },
 
     // Subscriptions & Entertainment
-    { name: 'Adobe Creative Cloud', sub: 'Design & Creative', categoryId: 'subscriptions', logo: 'logo-entertainment-adobe-creative-cloud.png' },
-    { name: 'ChatGPT', sub: 'AI & Productivity', categoryId: 'subscriptions', logo: 'logo-entertainment-chatgpt.png' },
-    { name: 'Microsoft 365', sub: 'Office & Productivity', categoryId: 'subscriptions', logo: 'logo-entertainment-ms-office.png' },
-    { name: 'Netflix', sub: 'Movies & Series', categoryId: 'subscriptions', logo: 'logo-entertainment-netflix.png' },
-    { name: 'Spotify Premium', sub: 'Music Streaming', categoryId: 'subscriptions', logo: 'logo-entertainment-spotify.png' },
+    { name: 'Adobe Creative Cloud', sub: 'Design & Creative', categoryId: 'subscriptions', logo: './logo-entertainment-adobe-creative-cloud.png' },
+    { name: 'ChatGPT', sub: 'AI & Productivity', categoryId: 'subscriptions', logo: './logo-entertainment-chatgpt.png' },
+    { name: 'Microsoft 365', sub: 'Office & Productivity', categoryId: 'subscriptions', logo: './logo-entertainment-ms-office.png' },
+    { name: 'Netflix', sub: 'Movies & Series', categoryId: 'subscriptions', logo: './logo-entertainment-netflix.png' },
+    { name: 'Spotify Premium', sub: 'Music Streaming', categoryId: 'subscriptions', logo: './logo-entertainment-spotify.png' },
 
     // Gyms & Fitness
-    { name: 'Al Nakheel Fitness', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-al-nakheel-fitness.jpg' },
-    { name: 'FIT Gym & Spa', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-fit.png' },
-    { name: 'Fitness Track', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-fitness-track.jpg' },
-    { name: 'Gymnation', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-gymnation.png' },
-    { name: 'House of Fitness', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-house-of-fitness.jpg' },
-    { name: 'Spartan Fitness', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-spartan-fitness.jpg' },
-    { name: 'UFC GYM Bahrain', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-ufc.png' },
-    { name: 'Underground Gym', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: 'logo-gym-underground.png' },
+    { name: 'Al Nakheel Fitness', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-al-nakheel-fitness.jpg' },
+    { name: 'FIT Gym & Spa', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-fit.png' },
+    { name: 'Fitness Track', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-fitness-track.jpg' },
+    { name: 'Gymnation', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-gymnation.png' },
+    { name: 'House of Fitness', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-house-of-fitness.jpg' },
+    { name: 'Spartan Fitness', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-spartan-fitness.jpg' },
+    { name: 'UFC GYM Bahrain', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-ufc.png' },
+    { name: 'Underground Gym', sub: 'Gym & Fitness', categoryId: 'subscriptions', logo: './logo-gym-underground.png' },
 
     // Education (Schools)
-    { name: 'Abdul Rahman Kanoo International School (ARKIS)', sub: 'Private School', categoryId: 'education', logo: 'logo-school-arkis.jpg' },
-    { name: 'Ahlia National School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-ahlia.jpg' },
-    { name: 'Al Mahd School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-al-mahd.jpg' },
-    { name: 'Al Naseem International School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-naseem.png' },
-    { name: 'Al Noor International School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-al-noor.jpg' },
-    { name: 'Al Raja School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-al-raja.jpg' },
-    { name: 'Al Rawabi Private School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-al-rawabi.jpg' },
-    { name: 'Al Wisam School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-al-wisam.png' },
-    { name: 'American School of Bahrain', sub: 'Private School', categoryId: 'education', logo: 'logo-school-american.jpg' },
-    { name: 'APG School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-apg.png' },
-    { name: 'ARKS Diyar School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-arks-diyar.jpg' },
-    { name: 'Bahrain Bayan School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-bayan.png' },
-    { name: 'Bahrain School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-bahrain.png' },
-    { name: 'British School of Bahrain', sub: 'Private School', categoryId: 'education', logo: 'logo-school-british.png' },
-    { name: 'Britus International School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-britus.jpg' },
-    { name: 'Canadian School Bahrain', sub: 'Private School', categoryId: 'education', logo: 'logo-school-canadian.png' },
-    { name: 'Capital School Bahrain', sub: 'Private School', categoryId: 'education', logo: 'logo-school-capital.png' },
-    { name: 'Creativity Private School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-creativity.jpg' },
-    { name: 'Delmon School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-delmon.png' },
-    { name: 'Ibn Khuldoon National School (IKNS)', sub: 'Private School', categoryId: 'education', logo: 'logo-school-ibn-khuldoon.png' },
-    { name: 'International School of Choueifat', sub: 'Private School', categoryId: 'education', logo: 'logo-school-choueifat.png' },
-    { name: 'Nadeen International School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-nadeen.png' },
-    { name: 'Palms School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-palms.png' },
-    { name: 'Quality Education School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-quality-education.png' },
-    { name: 'Riffa Views International School (RVIS)', sub: 'Private School', categoryId: 'education', logo: 'logo-school-riffa-views-international.jpg' },
-    { name: 'Shaikha Hessa School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-shaikha-hessa.png' },
-    { name: "St. Christopher's School", sub: 'Private School', categoryId: 'education', logo: 'logo-school-st-christophers.png' },
-    { name: 'The One Multi National School (MNS)', sub: 'Private School', categoryId: 'education', logo: 'logo-school-multi-national.jpg' },
-    { name: 'Tylos School', sub: 'Private School', categoryId: 'education', logo: 'logo-school-tylos.png' },
+    { name: 'Abdul Rahman Kanoo International School (ARKIS)', sub: 'Private School', categoryId: 'education', logo: './logo-school-arkis.jpg' },
+    { name: 'Ahlia National School', sub: 'Private School', categoryId: 'education', logo: './logo-school-ahlia.jpg' },
+    { name: 'Al Mahd School', sub: 'Private School', categoryId: 'education', logo: './logo-school-al-mahd.jpg' },
+    { name: 'Al Naseem International School', sub: 'Private School', categoryId: 'education', logo: './logo-school-naseem.png' },
+    { name: 'Al Noor International School', sub: 'Private School', categoryId: 'education', logo: './logo-school-al-noor.jpg' },
+    { name: 'Al Raja School', sub: 'Private School', categoryId: 'education', logo: './logo-school-al-raja.jpg' },
+    { name: 'Al Rawabi Private School', sub: 'Private School', categoryId: 'education', logo: './logo-school-al-rawabi.jpg' },
+    { name: 'Al Wisam School', sub: 'Private School', categoryId: 'education', logo: './logo-school-al-wisam.png' },
+    { name: 'American School of Bahrain', sub: 'Private School', categoryId: 'education', logo: './logo-school-american.jpg' },
+    { name: 'APG School', sub: 'Private School', categoryId: 'education', logo: './logo-school-apg.png' },
+    { name: 'ARKS Diyar School', sub: 'Private School', categoryId: 'education', logo: './logo-school-arks-diyar.jpg' },
+    { name: 'Bahrain Bayan School', sub: 'Private School', categoryId: 'education', logo: './logo-school-bayan.png' },
+    { name: 'Bahrain School', sub: 'Private School', categoryId: 'education', logo: './logo-school-bahrain.png' },
+    { name: 'British School of Bahrain', sub: 'Private School', categoryId: 'education', logo: './logo-school-british.png' },
+    { name: 'Britus International School', sub: 'Private School', categoryId: 'education', logo: './logo-school-britus.jpg' },
+    { name: 'Canadian School Bahrain', sub: 'Private School', categoryId: 'education', logo: './logo-school-canadian.png' },
+    { name: 'Capital School Bahrain', sub: 'Private School', categoryId: 'education', logo: './logo-school-capital.png' },
+    { name: 'Creativity Private School', sub: 'Private School', categoryId: 'education', logo: './logo-school-creativity.jpg' },
+    { name: 'Delmon School', sub: 'Private School', categoryId: 'education', logo: './logo-school-delmon.png' },
+    { name: 'Ibn Khuldoon National School (IKNS)', sub: 'Private School', categoryId: 'education', logo: './logo-school-ibn-khuldoon.png' },
+    { name: 'International School of Choueifat', sub: 'Private School', categoryId: 'education', logo: './logo-school-choueifat.png' },
+    { name: 'Nadeen International School', sub: 'Private School', categoryId: 'education', logo: './logo-school-nadeen.png' },
+    { name: 'Palms School', sub: 'Private School', categoryId: 'education', logo: './logo-school-palms.png' },
+    { name: 'Quality Education School', sub: 'Private School', categoryId: 'education', logo: './logo-school-quality-education.png' },
+    { name: 'Riffa Views International School (RVIS)', sub: 'Private School', categoryId: 'education', logo: './logo-school-riffa-views-international.jpg' },
+    { name: 'Shaikha Hessa School', sub: 'Private School', categoryId: 'education', logo: './logo-school-shaikha-hessa.png' },
+    { name: "St. Christopher's School", sub: 'Private School', categoryId: 'education', logo: './logo-school-st-christophers.png' },
+    { name: 'The One Multi National School (MNS)', sub: 'Private School', categoryId: 'education', logo: './logo-school-multi-national.jpg' },
+    { name: 'Tylos School', sub: 'Private School', categoryId: 'education', logo: './logo-school-tylos.png' },
 
     // Education (Universities)
-    { name: 'Ahlia University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-ahlia.png' },
-    { name: 'American University of Bahrain', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-american.png' },
-    { name: 'Applied Science University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-applied-science.png' },
-    { name: 'BIBF University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-bibf.png' },
-    { name: 'British University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-british.png' },
-    { name: 'Gulf University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-gulf.png' },
-    { name: 'Kingdom University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-kingdom.png' },
-    { name: 'Polytechnic University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-polytechnic.jpg' },
-    { name: 'RCSI University', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-rcsi.png' },
-    { name: 'Royal University for Women', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-royal.png' },
-    { name: 'University of Bahrain (UOB)', sub: 'Higher Education', categoryId: 'education', logo: 'logo-uni-uob.jpg' },
+    { name: 'Ahlia University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-ahlia.png' },
+    { name: 'American University of Bahrain', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-american.png' },
+    { name: 'Applied Science University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-applied-science.png' },
+    { name: 'BIBF University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-bibf.png' },
+    { name: 'British University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-british.png' },
+    { name: 'Gulf University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-gulf.png' },
+    { name: 'Kingdom University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-kingdom.png' },
+    { name: 'Polytechnic University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-polytechnic.jpg' },
+    { name: 'RCSI University', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-rcsi.png' },
+    { name: 'Royal University for Women', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-royal.png' },
+    { name: 'University of Bahrain (UOB)', sub: 'Higher Education', categoryId: 'education', logo: './logo-uni-uob.jpg' },
 
     // Charities & Humanitarian
-    { name: "A'ali Social Charity Society", sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-aali-social-charity-society.png' },
-    { name: 'Al Hamala Social, Charity, Cultural Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-al-hamala-society.png' },
-    { name: 'Al Hilla Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-alhilla-charity-society.png' },
-    { name: 'Al Sanabel Orphans Care Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-al-sanabel-orphans-care-society.png' },
-    { name: 'Almusalla Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-almusalla-charity-society.png' },
-    { name: 'Alnoor Charity Welfare', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-alnoor-charity-welfare.jpg' },
-    { name: 'Arad Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-arad-charity-society.png' },
-    { name: 'Arad Village Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-arad-village-charity-society.png' },
-    { name: 'Bahrain Society for Children with Behavioral & Communication Difficulties', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-bahrain-society-for-children.png' },
-    { name: 'Bani Jamra Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-bani-jamra-charity-society.png' },
-    { name: 'Bouri Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-bouri-charity-society.png' },
-    { name: 'Daih Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-daih-charity-society.jpg' },
-    { name: 'Damistan Social Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-damistan-social-charity-society.png' },
-    { name: 'Darkulaib Charity Social Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-darkulaib-charity-social-society.jpg' },
-    { name: 'Good Word Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-good-word-society.png' },
-    { name: 'Hamad Town Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-hamad-town-charity-society.png' },
-    { name: 'Isa Town Social Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-isa-town-social-charity-society.png' },
-    { name: 'Islamic Association', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-islamic-association.png' },
-    { name: 'Janusan Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-janusan-charity-society.png' },
-    { name: 'Jid Al-Haj Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-jid-al-haj-charity-society.png' },
-    { name: 'Jidhafs Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-jidhafs-charity-society.png' },
-    { name: 'Kaaf Humanitarian Al Eslah Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-kaaf-humanitarian-al-eslah-society.png' },
-    { name: "Ma'ameer Charity Society", sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-maameer-charity-society.png' },
-    { name: 'Mafateeh Alkhair Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-mafateeh-alkhair-society.png' },
-    { name: 'Manama Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-manama-charity-society.png' },
-    { name: 'Nuwaidrat Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-nuwaidrat-charity-society.jpg' },
-    { name: 'Royal Humanitarian Foundation', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-royal-humanitarian-foundation.jpg' },
-    { name: 'Saar Charity Fund', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-saar-charity-fund.png' },
-    { name: 'Sadad Charity Social Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-sadad-charity-social-society.jpg' },
-    { name: 'Salmabad Housing Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-salmabad-housing-charity-society.png' },
-    { name: 'Samaheej Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-samaheej-charity-society.png' },
-    { name: 'Sanabis Charity Society Fund', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-sanabis-charity-society.png' },
-    { name: 'Sehla Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-sehla-charity-society.png' },
-    { name: 'Sitra Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-sitra-charity-society.png' },
-    { name: 'The Capital Charity Association', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-the-capital-charity-association.png' },
-    { name: 'Tree of Life Social Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: 'logo-charity-tree-of-life-social-charity-society.png' },
+    { name: "A'ali Social Charity Society", sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-aali-social-charity-society.png' },
+    { name: 'Al Hamala Social, Charity, Cultural Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-al-hamala-society.png' },
+    { name: 'Al Hilla Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-alhilla-charity-society.png' },
+    { name: 'Al Sanabel Orphans Care Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-al-sanabel-orphans-care-society.png' },
+    { name: 'Almusalla Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-almusalla-charity-society.png' },
+    { name: 'Alnoor Charity Welfare', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-alnoor-charity-welfare.jpg' },
+    { name: 'Arad Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-arad-charity-society.png' },
+    { name: 'Arad Village Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-arad-village-charity-society.png' },
+    { name: 'Bahrain Society for Children with Behavioral & Communication Difficulties', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-bahrain-society-for-children.png' },
+    { name: 'Bani Jamra Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-bani-jamra-charity-society.png' },
+    { name: 'Bouri Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-bouri-charity-society.png' },
+    { name: 'Daih Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-daih-charity-society.jpg' },
+    { name: 'Damistan Social Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-damistan-social-charity-society.png' },
+    { name: 'Darkulaib Charity Social Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-darkulaib-charity-social-society.jpg' },
+    { name: 'Good Word Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-good-word-society.png' },
+    { name: 'Hamad Town Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-hamad-town-charity-society.png' },
+    { name: 'Isa Town Social Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-isa-town-social-charity-society.png' },
+    { name: 'Islamic Association', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-islamic-association.png' },
+    { name: 'Janusan Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-janusan-charity-society.png' },
+    { name: 'Jid Al-Haj Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-jid-al-haj-charity-society.png' },
+    { name: 'Jidhafs Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-jidhafs-charity-society.png' },
+    { name: 'Kaaf Humanitarian Al Eslah Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-kaaf-humanitarian-al-eslah-society.png' },
+    { name: "Ma'ameer Charity Society", sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-maameer-charity-society.png' },
+    { name: 'Mafateeh Alkhair Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-mafateeh-alkhair-society.png' },
+    { name: 'Manama Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-manama-charity-society.png' },
+    { name: 'Nuwaidrat Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-nuwaidrat-charity-society.jpg' },
+    { name: 'Royal Humanitarian Foundation', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-royal-humanitarian-foundation.jpg' },
+    { name: 'Saar Charity Fund', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-saar-charity-fund.png' },
+    { name: 'Sadad Charity Social Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-sadad-charity-social-society.jpg' },
+    { name: 'Salmabad Housing Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-salmabad-housing-charity-society.png' },
+    { name: 'Samaheej Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-samaheej-charity-society.png' },
+    { name: 'Sanabis Charity Society Fund', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-sanabis-charity-society.png' },
+    { name: 'Sehla Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-sehla-charity-society.png' },
+    { name: 'Sitra Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-sitra-charity-society.png' },
+    { name: 'The Capital Charity Association', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-the-capital-charity-association.png' },
+    { name: 'Tree of Life Social Charity Society', sub: 'Humanitarian & Social', categoryId: 'charity', logo: './logo-charity-tree-of-life-social-charity-society.png' },
 
     // Government Services
-    { name: 'Labour Market Regulatory Authority', sub: 'LMRA Services', categoryId: 'government', logo: 'logo-gov-lmra.png' },
-    { name: 'Ministry of Industry, Commerce & Tourism', sub: 'MOICT Services', categoryId: 'government', logo: 'logo-gov-moict.jpg' },
-    { name: 'Survey & Land Registration Bureau', sub: 'SLRB Services', categoryId: 'government', logo: 'logo-gov-slrb.jpg' },
-    { name: 'Tourism & Exhibitions Authority', sub: 'BTEA Services', categoryId: 'government', logo: 'logo-gov-tourism-and-exhibitions-authority.png' },
+    { name: 'Labour Market Regulatory Authority', sub: 'LMRA Services', categoryId: 'government', logo: './logo-gov-lmra.png' },
+    { name: 'Ministry of Industry, Commerce & Tourism', sub: 'MOICT Services', categoryId: 'government', logo: './logo-gov-moict.jpg' },
+    { name: 'Survey & Land Registration Bureau', sub: 'SLRB Services', categoryId: 'government', logo: './logo-gov-slrb.jpg' },
+    { name: 'Tourism & Exhibitions Authority', sub: 'BTEA Services', categoryId: 'government', logo: './logo-gov-tourism-and-exhibitions-authority.png' },
 
     // Electricity & Water Services
-    { name: 'Electricity & Water Authority (EWA)', sub: 'Utility Bills & Services', categoryId: 'electricity', logo: 'logo-ewa.jpg' }
+    { name: 'Electricity & Water Authority (EWA)', sub: 'Utility Bills & Services', categoryId: 'electricity', logo: './logo-ewa.jpg' }
 ];
 
 // 2. GLOBAL SEARCH FUNCTION
@@ -3514,19 +3516,19 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
             name: 'Batelco', 
             sub: 'Fiber & Postpaid', 
-            logo: 'logo-batelco.png',
+            logo: './logo-batelco.png',
             services: ['Mobile Prepaid', 'Mobile Postpaid', 'Fixed Line', 'Enterprise Payment']
         },
         { 
             name: 'stc Bahrain', 
             sub: 'Mobile & Broadband', 
-            logo: 'logo-stc.jpg',
+            logo: './logo-stc.jpg',
             services: ['Prepaid', 'Prepaid Broadband', 'Postpaid', 'Postpaid Broadband', 'Postpaid Terminated']
         },
         { 
             name: 'Zain', 
             sub: '5G Home Internet', 
-            logo: 'logo-zain.png',
+            logo: './logo-zain.png',
             services: ['Mobile Prepaid', 'Payment on One Number', 'Payment on All Numbers']
         }
     ];
@@ -3585,47 +3587,47 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="space-y-4">
                 ${[
                     // Schools A-Z
-                    { name: 'Abdul Rahman Kanoo International School (ARKIS)', sub: 'Private School', logo: 'logo-school-arkis.jpg' },
-                    { name: 'Ahlia National School', sub: 'Private School', logo: 'logo-school-ahlia.jpg' },
-                    { name: 'Al Mahd School', sub: 'Private School', logo: 'logo-school-al-mahd.jpg' },
-                    { name: 'Al Naseem International School', sub: 'Private School', logo: 'logo-school-naseem.png' },
-                    { name: 'Al Noor International School', sub: 'Private School', logo: 'logo-school-al-noor.jpg' },
-                    { name: 'Al Raja School', sub: 'Private School', logo: 'logo-school-al-raja.jpg' },
-                    { name: 'Al Rawabi Private School', sub: 'Private School', logo: 'logo-school-al-rawabi.jpg' },
-                    { name: 'Al Wisam School', sub: 'Private School', logo: 'logo-school-al-wisam.png' },
-                    { name: 'American School of Bahrain', sub: 'Private School', logo: 'logo-school-american.jpg' },
-                    { name: 'APG School', sub: 'Private School', logo: 'logo-school-apg.png' },
-                    { name: 'ARKS Diyar School', sub: 'Private School', logo: 'logo-school-arks-diyar.jpg' },
-                    { name: 'Bahrain Bayan School', sub: 'Private School', logo: 'logo-school-bayan.png' },
-                    { name: 'Bahrain School', sub: 'Private School', logo: 'logo-school-bahrain.png' },
-                    { name: 'British School of Bahrain', sub: 'Private School', logo: 'logo-school-british.png' },
-                    { name: 'Britus International School', sub: 'Private School', logo: 'logo-school-britus.jpg' },
-                    { name: 'Canadian School Bahrain', sub: 'Private School', logo: 'logo-school-canadian.png' },
-                    { name: 'Capital School Bahrain', sub: 'Private School', logo: 'logo-school-capital.png' },
-                    { name: 'Creativity Private School', sub: 'Private School', logo: 'logo-school-creativity.jpg' },
-                    { name: 'Delmon School', sub: 'Private School', logo: 'logo-school-delmon.png' },
-                    { name: 'Ibn Khuldoon National School (IKNS)', sub: 'Private School', logo: 'logo-school-ibn-khuldoon.png' },
-                    { name: 'International School of Choueifat', sub: 'Private School', logo: 'logo-school-choueifat.png' },
-                    { name: 'Nadeen International School', sub: 'Private School', logo: 'logo-school-nadeen.png' },
-                    { name: 'Palms School', sub: 'Private School', logo: 'logo-school-palms.png' },
-                    { name: 'Quality Education School', sub: 'Private School', logo: 'logo-school-quality-education.png' },
-                    { name: 'Riffa Views International School (RVIS)', sub: 'Private School', logo: 'logo-school-riffa-views-international.jpg' },
-                    { name: 'Shaikha Hessa School', sub: 'Private School', logo: 'logo-school-shaikha-hessa.png' },
-                    { name: "St. Christopher's School", sub: 'Private School', logo: 'logo-school-st-christophers.png' },
-                    { name: 'The One Multi National School (MNS)', sub: 'Private School', logo: 'logo-school-multi-national.jpg' },
-                    { name: 'Tylos School', sub: 'Private School', logo: 'logo-school-tylos.png' },
+                    { name: 'Abdul Rahman Kanoo International School (ARKIS)', sub: 'Private School', logo: './logo-school-arkis.jpg' },
+                    { name: 'Ahlia National School', sub: 'Private School', logo: './logo-school-ahlia.jpg' },
+                    { name: 'Al Mahd School', sub: 'Private School', logo: './logo-school-al-mahd.jpg' },
+                    { name: 'Al Naseem International School', sub: 'Private School', logo: './logo-school-naseem.png' },
+                    { name: 'Al Noor International School', sub: 'Private School', logo: './logo-school-al-noor.jpg' },
+                    { name: 'Al Raja School', sub: 'Private School', logo: './logo-school-al-raja.jpg' },
+                    { name: 'Al Rawabi Private School', sub: 'Private School', logo: './logo-school-al-rawabi.jpg' },
+                    { name: 'Al Wisam School', sub: 'Private School', logo: './logo-school-al-wisam.png' },
+                    { name: 'American School of Bahrain', sub: 'Private School', logo: './logo-school-american.jpg' },
+                    { name: 'APG School', sub: 'Private School', logo: './logo-school-apg.png' },
+                    { name: 'ARKS Diyar School', sub: 'Private School', logo: './logo-school-arks-diyar.jpg' },
+                    { name: 'Bahrain Bayan School', sub: 'Private School', logo: './logo-school-bayan.png' },
+                    { name: 'Bahrain School', sub: 'Private School', logo: './logo-school-bahrain.png' },
+                    { name: 'British School of Bahrain', sub: 'Private School', logo: './logo-school-british.png' },
+                    { name: 'Britus International School', sub: 'Private School', logo: './logo-school-britus.jpg' },
+                    { name: 'Canadian School Bahrain', sub: 'Private School', logo: './logo-school-canadian.png' },
+                    { name: 'Capital School Bahrain', sub: 'Private School', logo: './logo-school-capital.png' },
+                    { name: 'Creativity Private School', sub: 'Private School', logo: './logo-school-creativity.jpg' },
+                    { name: 'Delmon School', sub: 'Private School', logo: './logo-school-delmon.png' },
+                    { name: 'Ibn Khuldoon National School (IKNS)', sub: 'Private School', logo: './logo-school-ibn-khuldoon.png' },
+                    { name: 'International School of Choueifat', sub: 'Private School', logo: './logo-school-choueifat.png' },
+                    { name: 'Nadeen International School', sub: 'Private School', logo: './logo-school-nadeen.png' },
+                    { name: 'Palms School', sub: 'Private School', logo: './logo-school-palms.png' },
+                    { name: 'Quality Education School', sub: 'Private School', logo: './logo-school-quality-education.png' },
+                    { name: 'Riffa Views International School (RVIS)', sub: 'Private School', logo: './logo-school-riffa-views-international.jpg' },
+                    { name: 'Shaikha Hessa School', sub: 'Private School', logo: './logo-school-shaikha-hessa.png' },
+                    { name: "St. Christopher's School", sub: 'Private School', logo: './logo-school-st-christophers.png' },
+                    { name: 'The One Multi National School (MNS)', sub: 'Private School', logo: './logo-school-multi-national.jpg' },
+                    { name: 'Tylos School', sub: 'Private School', logo: './logo-school-tylos.png' },
                     // Universities A-Z
-                    { name: 'Ahlia University', sub: 'Higher Education', logo: 'logo-uni-ahlia.png' },
-                    { name: 'American University', sub: 'Higher Education', logo: 'logo-uni-american.png' },
-                    { name: 'Applied Science University', sub: 'Higher Education', logo: 'logo-uni-applied-science.png' },
-                    { name: 'BIBF University', sub: 'Higher Education', logo: 'logo-uni-bibf.png' },
-                    { name: 'British University', sub: 'Higher Education', logo: 'logo-uni-british.png' },
-                    { name: 'Gulf University', sub: 'Higher Education', logo: 'logo-uni-gulf.png' },
-                    { name: 'Kingdom University', sub: 'Higher Education', logo: 'logo-uni-kingdom.png' },
-                    { name: 'Polytechnic University', sub: 'Higher Education', logo: 'logo-uni-polytechnic.jpg' },
-                    { name: 'RCSI University', sub: 'Higher Education', logo: 'logo-uni-rcsi.png' },
-                    { name: 'Royal University for Women', sub: 'Higher Education', logo: 'logo-uni-royal.png' },
-                    { name: 'University of Bahrain (UOB)', sub: 'Higher Education', logo: 'logo-uni-uob.jpg' }
+                    { name: 'Ahlia University', sub: 'Higher Education', logo: './logo-uni-ahlia.png' },
+                    { name: 'American University', sub: 'Higher Education', logo: './logo-uni-american.png' },
+                    { name: 'Applied Science University', sub: 'Higher Education', logo: './logo-uni-applied-science.png' },
+                    { name: 'BIBF University', sub: 'Higher Education', logo: './logo-uni-bibf.png' },
+                    { name: 'British University', sub: 'Higher Education', logo: './logo-uni-british.png' },
+                    { name: 'Gulf University', sub: 'Higher Education', logo: './logo-uni-gulf.png' },
+                    { name: 'Kingdom University', sub: 'Higher Education', logo: './logo-uni-kingdom.png' },
+                    { name: 'Polytechnic University', sub: 'Higher Education', logo: './logo-uni-polytechnic.jpg' },
+                    { name: 'RCSI University', sub: 'Higher Education', logo: './logo-uni-rcsi.png' },
+                    { name: 'Royal University for Women', sub: 'Higher Education', logo: './logo-uni-royal.png' },
+                    { name: 'University of Bahrain (UOB)', sub: 'Higher Education', logo: './logo-uni-uob.jpg' }
                 ].map(provider => `
                     <div class="p-4 rounded-[2.5rem] shadow-sm flex items-center justify-between border border-white/20" 
                          style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%);">
@@ -3666,21 +3668,21 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="space-y-4">
                 ${[
                     // Entertainment & Software A-Z
-                    { name: 'Adobe Creative Cloud', sub: 'Design & Creative', logo: 'logo-entertainment-adobe-creative-cloud.png' },
-                    { name: 'ChatGPT', sub: 'AI & Productivity', logo: 'logo-entertainment-chatgpt.png' },
-                    { name: 'Microsoft 365', sub: 'Office & Productivity', logo: 'logo-entertainment-ms-office.png' },
-                    { name: 'Netflix', sub: 'Movies & Series', logo: 'logo-entertainment-netflix.png' },
-                    { name: 'Spotify Premium', sub: 'Music Streaming', logo: 'logo-entertainment-spotify.png' },
+                    { name: 'Adobe Creative Cloud', sub: 'Design & Creative', logo: './logo-entertainment-adobe-creative-cloud.png' },
+                    { name: 'ChatGPT', sub: 'AI & Productivity', logo: './logo-entertainment-chatgpt.png' },
+                    { name: 'Microsoft 365', sub: 'Office & Productivity', logo: './logo-entertainment-ms-office.png' },
+                    { name: 'Netflix', sub: 'Movies & Series', logo: './logo-entertainment-netflix.png' },
+                    { name: 'Spotify Premium', sub: 'Music Streaming', logo: './logo-entertainment-spotify.png' },
                     
                     // Gyms & Fitness A-Z
-                    { name: 'Al Nakheel Fitness', sub: 'Gym & Fitness', logo: 'logo-gym-al-nakheel-fitness.jpg' },
-                    { name: 'FIT Gym & Spa', sub: 'Gym & Fitness', logo: 'logo-gym-fit.png' },
-                    { name: 'Fitness Track', sub: 'Gym & Fitness', logo: 'logo-gym-fitness-track.jpg' },
-                    { name: 'Gymnation', sub: 'Gym & Fitness', logo: 'logo-gym-gymnation.png' },
-                    { name: 'House of Fitness', sub: 'Gym & Fitness', logo: 'logo-gym-house-of-fitness.jpg' },
-                    { name: 'Spartan Fitness', sub: 'Gym & Fitness', logo: 'logo-gym-spartan-fitness.jpg' },
-                    { name: 'UFC GYM Bahrain', sub: 'Gym & Fitness', logo: 'logo-gym-ufc.png' },
-                    { name: 'Underground Gym', sub: 'Gym & Fitness', logo: 'logo-gym-underground.png' }
+                    { name: 'Al Nakheel Fitness', sub: 'Gym & Fitness', logo: './logo-gym-al-nakheel-fitness.jpg' },
+                    { name: 'FIT Gym & Spa', sub: 'Gym & Fitness', logo: './logo-gym-fit.png' },
+                    { name: 'Fitness Track', sub: 'Gym & Fitness', logo: './logo-gym-fitness-track.jpg' },
+                    { name: 'Gymnation', sub: 'Gym & Fitness', logo: './logo-gym-gymnation.png' },
+                    { name: 'House of Fitness', sub: 'Gym & Fitness', logo: './logo-gym-house-of-fitness.jpg' },
+                    { name: 'Spartan Fitness', sub: 'Gym & Fitness', logo: './logo-gym-spartan-fitness.jpg' },
+                    { name: 'UFC GYM Bahrain', sub: 'Gym & Fitness', logo: './logo-gym-ufc.png' },
+                    { name: 'Underground Gym', sub: 'Gym & Fitness', logo: './logo-gym-underground.png' }
                 ].map(provider => `
                     <div class="p-4 rounded-[2.5rem] shadow-sm flex items-center justify-between border border-white/20" 
                          style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%);">
@@ -3720,11 +3722,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="space-y-4">
                 ${[
-                    { name: 'Durrat Al Bahrain', sub: 'Luxury Resort & Residential', logo: 'logo-property-durrat-al-bahrain.jpg' },
-                    { name: 'Grnata Group', sub: 'Real Estate & Property Management', logo: 'logo-property-grnata.jpg' },
-                    { name: 'Marassi Residences', sub: 'Beachfront Living', logo: 'logo-property-marassi-residence.png' },
-                    { name: 'Marriott Exclusive Apartments', sub: 'Premium Serviced Living', logo: 'logo-property-marriott-apartments.jpg' },
-                    { name: 'Reef Island', sub: 'Private Island Residency', logo: 'logo-property-reef-island.jpg' }
+                    { name: 'Durrat Al Bahrain', sub: 'Luxury Resort & Residential', logo: './logo-property-durrat-al-bahrain.jpg' },
+                    { name: 'Grnata Group', sub: 'Real Estate & Property Management', logo: './logo-property-grnata.jpg' },
+                    { name: 'Marassi Residences', sub: 'Beachfront Living', logo: './logo-property-marassi-residence.png' },
+                    { name: 'Marriott Exclusive Apartments', sub: 'Premium Serviced Living', logo: './logo-property-marriott-apartments.jpg' },
+                    { name: 'Reef Island', sub: 'Private Island Residency', logo: './logo-property-reef-island.jpg' }
                 ].map(provider => `
                     <div class="p-4 rounded-[2.5rem] shadow-sm flex items-center justify-between border border-white/20" 
                          style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%);">
@@ -3764,13 +3766,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="space-y-4">
                 ${[
-                    { name: 'Arabia Insurance', sub: 'General Insurance Services', logo: 'logo-insurance-arabia.png' },
-                    { name: 'Bahrain National Insurance (BNI)', sub: 'Motor & Home Insurance', logo: 'logo-insurance-bahrain-national.jpg' },
-                    { name: 'CrediMax', sub: 'Credit & Payment Solutions', logo: 'logo-insurance-credimax.jpg' },
-                    { name: 'Gulf Union Insurance', sub: 'Health & General Insurance', logo: 'logo-insurance-gulf-union.jpg' },
-                    { name: 'SNIC Insurance', sub: 'Corporate & Personal Insurance', logo: 'logo-insurance-snic.jpg' },
-                    { name: 'Solidarity Insurance', sub: 'Takaful & Islamic Insurance', logo: 'logo-solidarity-logo.png' },
-                    { name: 'stc pay', sub: 'Digital Wallet & Payments', logo: 'logo-insurance-stc-pay.png' }
+                    { name: 'Arabia Insurance', sub: 'General Insurance Services', logo: './logo-insurance-arabia.png' },
+                    { name: 'Bahrain National Insurance (BNI)', sub: 'Motor & Home Insurance', logo: './logo-insurance-bahrain-national.jpg' },
+                    { name: 'CrediMax', sub: 'Credit & Payment Solutions', logo: './logo-insurance-credimax.jpg' },
+                    { name: 'Gulf Union Insurance', sub: 'Health & General Insurance', logo: './logo-insurance-gulf-union.jpg' },
+                    { name: 'SNIC Insurance', sub: 'Corporate & Personal Insurance', logo: './logo-insurance-snic.jpg' },
+                    { name: 'Solidarity Insurance', sub: 'Takaful & Islamic Insurance', logo: './logo-solidarity-logo.png' },
+                    { name: 'stc pay', sub: 'Digital Wallet & Payments', logo: './logo-insurance-stc-pay.png' }
                 ].map(provider => `
                     <div class="p-4 rounded-[2.5rem] shadow-sm flex items-center justify-between border border-white/20" 
                          style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%);">
@@ -3810,42 +3812,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="space-y-4">
                 ${[
-                    { name: "A'ali Social Charity Society", sub: 'Humanitarian & Social', logo: 'logo-charity-aali-social-charity-society.png' },                   
-                    { name: 'Al Hamala Social, Charity, Cultural Society', sub: 'Humanitarian & Social', logo: 'logo-charity-al-hamala-society.png' },
-                    { name: 'Al Hilla Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-alhilla-charity-society.png' },
-                    { name: 'Al Sanabel Orphans Care Society', sub: 'Humanitarian & Social', logo: 'logo-charity-al-sanabel-orphans-care-society.png' },
-                    { name: 'Almusalla Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-almusalla-charity-society.png' },
-                    { name: 'Alnoor Charity Welfare', sub: 'Humanitarian & Social', logo: 'logo-charity-alnoor-charity-welfare.jpg' },
-                    { name: 'Arad Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-arad-charity-society.png' },
-                    { name: 'Arad Village Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-arad-village-charity-society.png' },
-                    { name: 'Bahrain Society for Children with Behavioral & Communication Difficulties', sub: 'Humanitarian & Social', logo: 'logo-charity-bahrain-society-for-children.png' },
-                    { name: 'Bani Jamra Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-bani-jamra-charity-society.png' },
-                    { name: 'Bouri Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-bouri-charity-society.png' },
-                    { name: 'Daih Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-daih-charity-society.jpg' },
-                    { name: 'Damistan Social Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-damistan-social-charity-society.png' },
-                    { name: 'Darkulaib Charity Social Society', sub: 'Humanitarian & Social', logo: 'logo-charity-darkulaib-charity-social-society.jpg' },
-                    { name: 'Good Word Society', sub: 'Humanitarian & Social', logo: 'logo-charity-good-word-society.png' },
-                    { name: 'Hamad Town Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-hamad-town-charity-society.png' },
-                    { name: 'Isa Town Social Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-isa-town-social-charity-society.png' },
-                    { name: 'Islamic Association', sub: 'Humanitarian & Social', logo: 'logo-charity-islamic-association.png' },
-                    { name: 'Janusan Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-janusan-charity-society.png' },
-                    { name: 'Jid Al-Haj Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-jid-al-haj-charity-society.png' },
-                    { name: 'Jidhafs Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-jidhafs-charity-society.png' },
-                    { name: 'Kaaf Humanitarian Al Eslah Society', sub: 'Humanitarian & Social', logo: 'logo-charity-kaaf-humanitarian-al-eslah-society.png' },
-                    { name: "Ma'ameer Charity Society", sub: 'Humanitarian & Social', logo: 'logo-charity-maameer-charity-society.png' },
-                    { name: 'Mafateeh Alkhair Society', sub: 'Humanitarian & Social', logo: 'logo-charity-mafateeh-alkhair-society.png' },
-                    { name: 'Manama Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-manama-charity-society.png' },
-                    { name: 'Nuwaidrat Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-nuwaidrat-charity-society.jpg' },
-                    { name: 'Royal Humanitarian Foundation', sub: 'Humanitarian & Social', logo: 'logo-charity-royal-humanitarian-foundation.jpg' },
-                    { name: 'Saar Charity Fund', sub: 'Humanitarian & Social', logo: 'logo-charity-saar-charity-fund.png' },
-                    { name: 'Sadad Charity Social Society', sub: 'Humanitarian & Social', logo: 'logo-charity-sadad-charity-social-society.jpg' },
-                    { name: 'Salmabad Housing Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-salmabad-housing-charity-society.png' },
-                    { name: 'Samaheej Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-samaheej-charity-society.png' },
-                    { name: 'Sanabis Charity Society Fund', sub: 'Humanitarian & Social', logo: 'logo-charity-sanabis-charity-society.png' },
-                    { name: 'Sehla Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-sehla-charity-society.png' },
-                    { name: 'Sitra Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-sitra-charity-society.png' },
-                    { name: 'The Capital Charity Association', sub: 'Humanitarian & Social', logo: 'logo-charity-the-capital-charity-association.png' },
-                    { name: 'Tree of Life Social Charity Society', sub: 'Humanitarian & Social', logo: 'logo-charity-tree-of-life-social-charity-society.png' }
+                    { name: "A'ali Social Charity Society", sub: 'Humanitarian & Social', logo: './logocharity-aali-social-charity-society.png' },                   
+                    { name: 'Al Hamala Social, Charity, Cultural Society', sub: 'Humanitarian & Social', logo: './logo-charity-al-hamala-society.png' },
+                    { name: 'Al Hilla Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-alhilla-charity-society.png' },
+                    { name: 'Al Sanabel Orphans Care Society', sub: 'Humanitarian & Social', logo: './logo-charity-al-sanabel-orphans-care-society.png' },
+                    { name: 'Almusalla Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-almusalla-charity-society.png' },
+                    { name: 'Alnoor Charity Welfare', sub: 'Humanitarian & Social', logo: './logo-charity-alnoor-charity-welfare.jpg' },
+                    { name: 'Arad Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-arad-charity-society.png' },
+                    { name: 'Arad Village Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-arad-village-charity-society.png' },
+                    { name: 'Bahrain Society for Children with Behavioral & Communication Difficulties', sub: 'Humanitarian & Social', logo: './logo-charity-bahrain-society-for-children.png' },
+                    { name: 'Bani Jamra Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-bani-jamra-charity-society.png' },
+                    { name: 'Bouri Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-bouri-charity-society.png' },
+                    { name: 'Daih Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-daih-charity-society.jpg' },
+                    { name: 'Damistan Social Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-damistan-social-charity-society.png' },
+                    { name: 'Darkulaib Charity Social Society', sub: 'Humanitarian & Social', logo: './logo-charity-darkulaib-charity-social-society.jpg' },
+                    { name: 'Good Word Society', sub: 'Humanitarian & Social', logo: './logo-charity-good-word-society.png' },
+                    { name: 'Hamad Town Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-hamad-town-charity-society.png' },
+                    { name: 'Isa Town Social Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-isa-town-social-charity-society.png' },
+                    { name: 'Islamic Association', sub: 'Humanitarian & Social', logo: './logo-charity-islamic-association.png' },
+                    { name: 'Janusan Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-janusan-charity-society.png' },
+                    { name: 'Jid Al-Haj Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-jid-al-haj-charity-society.png' },
+                    { name: 'Jidhafs Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-jidhafs-charity-society.png' },
+                    { name: 'Kaaf Humanitarian Al Eslah Society', sub: 'Humanitarian & Social', logo: './logo-charity-kaaf-humanitarian-al-eslah-society.png' },
+                    { name: "Ma'ameer Charity Society", sub: 'Humanitarian & Social', logo: './logo-charity-maameer-charity-society.png' },
+                    { name: 'Mafateeh Alkhair Society', sub: 'Humanitarian & Social', logo: './logo-charity-mafateeh-alkhair-society.png' },
+                    { name: 'Manama Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-manama-charity-society.png' },
+                    { name: 'Nuwaidrat Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-nuwaidrat-charity-society.jpg' },
+                    { name: 'Royal Humanitarian Foundation', sub: 'Humanitarian & Social', logo: './logo-charity-royal-humanitarian-foundation.jpg' },
+                    { name: 'Saar Charity Fund', sub: 'Humanitarian & Social', logo: './logo-charity-saar-charity-fund.png' },
+                    { name: 'Sadad Charity Social Society', sub: 'Humanitarian & Social', logo: './logo-charity-sadad-charity-social-society.jpg' },
+                    { name: 'Salmabad Housing Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-salmabad-housing-charity-society.png' },
+                    { name: 'Samaheej Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-samaheej-charity-society.png' },
+                    { name: 'Sanabis Charity Society Fund', sub: 'Humanitarian & Social', logo: './logo-charity-sanabis-charity-society.png' },
+                    { name: 'Sehla Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-sehla-charity-society.png' },
+                    { name: 'Sitra Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-sitra-charity-society.png' },
+                    { name: 'The Capital Charity Association', sub: 'Humanitarian & Social', logo: './logo-charity-the-capital-charity-association.png' },
+                    { name: 'Tree of Life Social Charity Society', sub: 'Humanitarian & Social', logo: './logo-charity-tree-of-life-social-charity-society.png' }
                     ].map(provider => {
                 // This creates a safe string for the onclick: A\'ali
                 const safeName = provider.name.replace(/'/g, "\\'");
@@ -3889,10 +3891,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="space-y-4">
                 ${[
-                    { name: 'Labour Market Regulatory Authority', sub: 'LMRA Services', logo: 'logo-gov-lmra.png' },
-                    { name: 'Ministry of Industry, Commerce & Tourism', sub: 'MOICT Services', logo: 'logo-gov-moict.jpg' },
-                    { name: 'Survey & Land Registration Bureau', sub: 'SLRB Services', logo: 'logo-gov-slrb.jpg' },
-                    { name: 'Tourism & Exhibitions Authority', sub: 'BTEA Services', logo: 'logo-gov-tourism-and-exhibitions-authority.png' }
+                    { name: 'Labour Market Regulatory Authority', sub: 'LMRA Services', logo: './logo-gov-lmra.png' },
+                    { name: 'Ministry of Industry, Commerce & Tourism', sub: 'MOICT Services', logo: './logo-gov-moict.jpg' },
+                    { name: 'Survey & Land Registration Bureau', sub: 'SLRB Services', logo: './logo-gov-slrb.jpg' },
+                    { name: 'Tourism & Exhibitions Authority', sub: 'BTEA Services', logo: './logo-gov-tourism-and-exhibitions-authority.png' }
                 ].map(provider => `
                     <div class="p-4 rounded-[2.5rem] shadow-sm flex items-center justify-between border border-white/20" 
                          style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%);">
@@ -3932,7 +3934,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="space-y-4">
                 ${[
-                    { name: 'Electricity & Water Authority (EWA)', sub: 'Utility Bills & Services', logo: 'logo-ewa.jpg' }
+                    { name: 'Electricity & Water Authority (EWA)', sub: 'Utility Bills & Services', logo: './logo-ewa.jpg' }
                 ].map(provider => `
                     <div class="p-4 rounded-[2.5rem] shadow-sm flex items-center justify-between border border-white/20" 
                          style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(49, 73, 75, 0.05) 100%);">
