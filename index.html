@@ -1572,39 +1572,56 @@
 </style>
     
         
-    <!-- Auth Section --><!-- Auth Section - Strictly No-Scroll Version -->
-<!-- Auth Section - Final Balanced & Forced Autoplay -->
-<video muted autoplay loop playsinline webkit-playsinline preload="auto"
-    style="height: 100%; width: auto; max-width: 78%; object-fit: contain;">
-    <source src="Video-home.mp4" type="video/mp4">
-</video>
-  document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('video');
-    
-    // Attempt to play on load
-    video.play().catch(function(error) {
-      console.log("Autoplay blocked by browser/battery settings.");
-      
-      // Fallback: Play on first user interaction anywhere on the screen
-      document.body.addEventListener('click', function() {
-        video.play();
-      }, { once: true });
-    });
-  });
-</script>
+<!-- Auth Section - Final Fix -->
+<section id="auth-view" class="section" style="height: 100svh; overflow: hidden; background-color: #f8f5e9;">
+    <div class="container px-4" style="display: flex; flex-direction: column; align-items: center; height: 100%; padding-top: 15px;">
         
-        <!-- 3. e-Key: Tightened Grouping -->
+        <!-- 1. Header -->
+        <div class="text-center" style="margin-bottom: 10px; width: 100%;">
+            <h1 style="color: #6d6a3f !important; font-family: 'Futura', sans-serif !important; font-size: 2.7rem !important; font-weight: 600 !important; white-space: nowrap; margin: 0; letter-spacing: -0.5px;">KAFEEL</h1>
+            <p style="color: #1F3B3E !important; line-height: 1.2; font-size: 0.95rem; white-space: nowrap; margin: 0 auto;">
+                Where conscience meets currency.<br />
+                Simplify bills. Build credit. Get loans.
+            </p>
+        </div>
+        
+        <!-- 2. Video Container -->
+        <div style="width: 100%; max-height: 42vh; display: flex; justify-content: center; align-items: center; margin: 10px 0; overflow: hidden;">
+            <video id="mainVideo" muted autoplay loop playsinline webkit-playsinline preload="auto"
+                style="height: 100%; width: auto; max-width: 78%; object-fit: contain; pointer-events: none;">
+                <source src="Video-home.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <!-- 3. e-Key Group -->
         <div class="text-center" style="margin-top: 5px; z-index: 10;">
             <a href="#" onclick="document.querySelectorAll('.section').forEach(s => s.classList.add('hidden')); document.getElementById('home-view').classList.remove('hidden'); document.querySelector('.floating-nav').classList.add('show'); return false;" 
                class="ekey-circle-button animate-ekey-heartbeat" 
                style="transform: scale(0.7) !important; display: inline-block; margin-bottom: 0;">
                 <img src="eKey-logo.png" alt="e-Key" class="ekey-circle-logo">
             </a>
-            <!-- Margin-top is now negative to pull text closer to the button -->
-            <p style="font-size: 0.75rem; color: #1F3B3E; margin-top: -8px; font-weight: 500; opacity: 0.8;">Login with e-Key</p>
+            <!-- Pulling text higher -->
+            <p style="font-size: 0.75rem; color: #1F3B3E; margin-top: -12px; font-weight: 500; opacity: 0.8; position: relative; z-index: 11;">Login with e-Key</p>
         </div>
         
     </div>
+
+    <!-- Script moved inside section but at the very bottom -->
+    <script>
+        window.addEventListener('load', function() {
+            var video = document.getElementById('mainVideo');
+            if (video) {
+                video.muted = true; // Double-enforce mute for mobile
+                video.play().catch(function(error) {
+                    console.log("Autoplay waiting for interaction");
+                    // Global fallback for stubborn browsers
+                    document.body.addEventListener('touchstart', function() {
+                        video.play();
+                    }, { once: true });
+                });
+            }
+        });
+    </script>
 </section>
 <!-- Auth Section (The version that caused overflow/scrolling) -->
     
