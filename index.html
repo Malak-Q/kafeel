@@ -1573,43 +1573,39 @@
     
         
     <!-- Auth Section --><!-- Auth Section - Strictly No-Scroll Version -->
-
-   <!-- Auth Section - High-Alignment No-Scroll Version -->
-<section id="auth-view" class="section" style="height: 100svh; overflow: hidden; display: flex; flex-direction: column; background-color: #f8f5e9;">
-    <div class="container px-4 flex flex-col" style="height: 100%; padding-top: 20px; padding-bottom: 20px;">
+<!-- Auth Section - Top-Aligned Stack -->
+<section id="auth-view" class="section" style="height: 100svh; overflow: hidden; background-color: #f8f5e9;">
+    <div class="container px-4" style="display: flex; flex-direction: column; align-items: center; height: 100%; padding-top: 10px;">
         
-        <!-- Header Section - Moved to the absolute top -->
-        <div class="text-center" style="flex-shrink: 0; margin-top: 10px;">
-            <h1 class="font-bold mb-1" style="color: #6d6a3f !important; font-family: 'Futura', sans-serif !important; font-size: 2.8rem !important; white-space: nowrap;">KAFEEL</h1>
-            <p style="color: #1F3B3E !important; line-height: 1.2; font-size: 0.95rem; white-space: nowrap; margin: 0 auto;">
+        <!-- 1. Header: Tight to the top -->
+        <div class="text-center" style="margin-bottom: 5px; width: 100%;">
+            <h1 class="font-bold" style="color: #6d6a3f !important; font-family: 'Futura', sans-serif !important; font-size: 2.5rem !important; white-space: nowrap; margin: 0;">KAFEEL</h1>
+            <p style="color: #1F3B3E !important; line-height: 1.2; font-size: 0.9rem; white-space: nowrap; margin: 0 auto;">
                 Where conscience meets currency.<br />
                 Simplify bills. Build credit. Get loans.
             </p>
         </div>
         
-        <!-- Central Welcome Area - Resizes dynamically to keep button visible -->
-        <div class="flex justify-center items-center" style="position: relative; flex-grow: 1; min-height: 0; overflow: hidden; margin: 5px 0;">
-            <!-- Background Glow -->
-            <div style="position: absolute; width: 180px; height: 180px; background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%); border-radius: 50%; z-index: 0;"></div>
-            
-            <!-- Video - Using 'contain' to ensure it never pushes the button out -->
+        <!-- 2. Video: Capped height to guarantee space below it -->
+        <div style="width: 100%; max-height: 45vh; display: flex; justify-content: center; align-items: center; margin: 10px 0; overflow: hidden;">
             <video autoplay muted loop playsinline
-                style="max-width: 90%; max-height: 90%; width: auto; height: auto; object-fit: contain; z-index: 1;">
+                style="height: 100%; width: auto; max-width: 80%; object-fit: contain;">
                 <source src="Video-home.mp4" type="video/mp4">
             </video>
         </div>
         
-        <!-- e-Key Button - Guaranteed visibility at the bottom -->
-        <div class="text-center" style="flex-shrink: 0; padding-bottom: 5px;">
+        <!-- 3. e-Key: Pulled UP closer to the video -->
+        <div class="text-center" style="margin-top: 5px;">
             <a href="#" onclick="document.querySelectorAll('.section').forEach(s => s.classList.add('hidden')); document.getElementById('home-view').classList.remove('hidden'); document.querySelector('.floating-nav').classList.add('show'); return false;" 
                class="ekey-circle-button animate-ekey-heartbeat" 
                style="transform: scale(0.7) !important; display: inline-block;">
-                <img src="eKey-logo.png" alt="e-Key" class="ekey-circle-logo" style="box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <img src="eKey-logo.png" alt="e-Key" class="ekey-circle-logo">
             </a>
+            <p style="font-size: 0.7rem; color: #1F3B3E; margin-top: 5px; opacity: 0.6;">Login with e-Key</p>
         </div>
         
     </div>
-</section> 
+</section>
     <!-- Auth Section -->
 <!-- Auth Section (The version that caused overflow/scrolling) -->
     
